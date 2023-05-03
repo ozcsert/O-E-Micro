@@ -12,37 +12,84 @@
     <h1 id="title">Survey Form</h1>
     <!--Main Box-->
     <form id="survey-form">
+    <div id="mainBox">
+    
 
       <!--Description-->
-      <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque nulla, aspernatur similique libero labore laborum exercitationem sequi laboriosam maxime maiores officia voluptas dicta veritatis accusantium nobis, iste eos incidunt vero..
-        <!--Filled by the User-->
-      </h2>
-      <h3>
-        <label> Name: 
-          <input type="text" id="name" name="username" required>
-        </label>
-      </h3>
-      <h3>
-        <label> Email:
-          <input type="email" id="email" name="email" required>
-        </label>
-      </h3>
-      <h3>
-        <label> Age: 
-          <input type="number" id="number">
-        </label>
-      </h3>
-      <h3>
-        Which department were you examined in? 
-      </h3>
-      <h3>
-        Would you recommend our hospital to your friends?
-      </h3>
-      <h3>
-      </h3>
-    </form>
-    
+       <p id="description"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque nulla, aspernatur similique libero labore laborum exercitationem sequi laboriosam maxime maiores officia voluptas dicta veritatis accusantium nobis, iste eos incidunt vero..
+      </p> 
+      
+      <!--Filled by the User-->
+      <div>
+          <h3>
+            <label  > Name: 
+              <input type="text" id="name" name="username" placeholder="Please enter your name" required>
+            </label>
+          </h3>
+          <h3>
+            <label > Email:
+              <input type="email" id="email" name="email" placeholder="Please enter your email" required>
+            </label>
+          </h3>
+          <h3>
+            <label > Age: 
+              <input type="number" id="number" required min="16" max="150" placeholder="Please enter your age" >
+            </label>
+          </h3>
+      </div>
+      <div class="recommend">
+            <div  class="question">
+                <h3>
+                <label for ="department"> Which department were you examined in? 
+                </label>
+                </h3>
+            </div>
+            <div class="radio">
+                <select name="deparment" id="dropdown">
+                <option value="Orthopedia">Orthopedia</option>
+                <option value="Cardiovascular">Cardiovascular</option>
+                <option value="Optimetri">Optimetri</option>
+                </select>
+            </div>
+          
+      </div>
+      <div class="recommend">
+          <div class="question" >
+            <h3>
+              <label>
+              Would you recommend our hospital to your friends?
+              </label>
+            </h3>
+          </div>
+     
+          <div class="radio" > 
+            <div class="radioitem">
+              <input type="radio" id="Definitely" name="fav_language" value="Definitely">
+              <label for="Definitely">Definitely</label><br>
+              <input style="margin-left: -20px;" type="radio" id="Maybe" name="fav_language" value="Maybe">
+              <label for="Maybe">Maybe</label><br>
+              <input type="radio" id="Not really" name="fav_language" value="Not really">
+              <label for="Not Really">Not Really</label>
+            </div>
+          </div>
+          </div>
+          <div>
+            <label for="w3review">Review of W3Schools:</label>
+
+<textarea id="w3review" name="w3review" rows="4" cols="50">
+
+</textarea>
+          </div>
     </div>
+    
+
+
+    
+    
+  </div>
+</form>
+    
+  
     <!--FOOTER-->
     <footer >
       <div class="footer">
