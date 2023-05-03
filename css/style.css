@@ -18,6 +18,7 @@
     width: 80%;
     height: 100%;
     margin-top: 5%;
+    font-family: 'Gill Sans', 'Gill Sans MT',  'Trebuchet MS', sans-serif,monospace;
 }
 
 
@@ -39,7 +40,7 @@ h3 {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: red;
+    background-color: rgb(248, 170, 25);
     color: white;
     text-align: center;
   }
@@ -52,12 +53,11 @@ h3 {
 }
 
 .question {
-    background-color: aquamarine;
+
     width: 65%;
 }
 
 .radio {
     width: 35%;
     text-align: center;
-    
 }
