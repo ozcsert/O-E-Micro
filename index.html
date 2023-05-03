@@ -11,20 +11,26 @@
     <!--Title-->
     <h1 id="title">Survey Form</h1>
     <!--Main Box-->
-    <div id="mainBox">
+    <form id="survey-form">
 
       <!--Description-->
       <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque nulla, aspernatur similique libero labore laborum exercitationem sequi laboriosam maxime maiores officia voluptas dicta veritatis accusantium nobis, iste eos incidunt vero..
         <!--Filled by the User-->
       </h2>
       <h3>
-        Name:
+        <label> Name: 
+          <input type="text" id="name" name="username" required>
+        </label>
       </h3>
       <h3>
-        Email:
+        <label> Email:
+          <input type="email" id="email" name="email" required>
+        </label>
       </h3>
       <h3>
-        Age:
+        <label> Age: 
+          <input type="number" id="number">
+        </label>
       </h3>
       <h3>
         Which department were you examined in? 
@@ -34,7 +40,7 @@
       </h3>
       <h3>
       </h3>
-      
+    </form>
     
     </div>
     <!--FOOTER-->
